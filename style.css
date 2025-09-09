@@ -21,12 +21,13 @@
     height: 85vh;
     width: 40vw;
     border-radius: 20px;
-    text-align: center;
+    
 }
 
 .header h1{
     padding: 12px;
     font-size: 2rem;
+    text-align: center;
 }
 
 @media (max-width:640px) {
@@ -34,4 +35,8 @@
         background: url(/assets/layerPhone.png) no-repeat center;
         background-size: cover;
     }
+    .box{
+    height: 65vh;
+    width: 80vw;
+}
 }
