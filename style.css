@@ -11,3 +11,16 @@
     background: url(/assets/layer.png) no-repeat center;
     background-size: cover;
 }
+
+.box{
+    
+
+}
+
+
+@media (max-width:640px) {
+    .container{
+        background: url(/assets/layerPhone.png) no-repeat center;
+        background-size: cover;
+    }
+}
