@@ -66,7 +66,7 @@
 
 .main p input[type="submit"]{
     border: none;
-    background-color: #4CAF50;
+    background-color: rgb(76, 175, 80);
     color: white;
     font: 600 1rem Arial, sans-serif;
     cursor: pointer;
@@ -76,7 +76,7 @@
     background-color: #206922;
 }
 
-.error{
+.nameError{
     color: #4CAF50;
 }
 
