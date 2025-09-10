@@ -11,6 +11,7 @@ submitBtn.addEventListener('click', (e) => {
     
     if(validateName() && validateEmail() && validatePhone()){
         alert('Form Submitted Successfully')
+        location.reload()
     }
 })
 
