@@ -79,6 +79,12 @@
 .nameError{
     color: #4CAF50;
 }
+.emailError{
+    color: #4CAF50;
+}
+.phoneError{
+    color: #4CAF50;
+}
 
 @media (max-width:640px) {
     .container{
