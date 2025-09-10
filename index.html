@@ -24,15 +24,17 @@
                         <label for="name">Full Name</label>
                         <input type="text" placeholder="Your Name" id="name" required
                             pattern="[A-Za-z]*\s{1}[A-Za-z]*$/">
+                            <span class="nameError"></span>
                     </p>
-                    <span class="nameError"></span>
                     <p>
                         <label for="email">Your Email</label>
                         <input type="email" placeholder="abc@gmail.com" id="email" required>
+                        <span class="emailError"></span>
                     </p>
                     <p>
                         <label for="num">Phone Number</label>
                         <input type="tel" placeholder="Your Phone Number" id="num" required min="10" max="10">
+                        <span class="phoneError"></span>
                     </p>
                     <p>
                         <label for="message">Message</label>
