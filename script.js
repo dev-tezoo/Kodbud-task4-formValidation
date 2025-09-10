@@ -9,7 +9,7 @@ const phoneError = document.querySelector('.phoneError')
 submitBtn.addEventListener('click', (e) => {
     e.preventDefault()
     
-    if(validateName() && validateEmail()){
+    if(validateName() && validateEmail() && validatePhone()){
         alert('Form Submitted Successfully')
     }
 })
@@ -48,18 +48,18 @@ function validateEmail() {
 }
 
 
-function validateEmail() {
-    let email = document.getElementById('email').value
+function validatePhone() {
+    let phone = document.getElementById('num').value
 
-    if(email.length == 0){
-        emailError.innerHTML = 'Email is required';
+    if(phone.length == 0){
+        phoneError.innerHTML = 'Phone number is required';
         return false;
     }
 
-    if(!email.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/)){
-        emailError.innerHTML = 'Write valid email';
+    if(!phone.match(/^\d{10}$/)){
+        phoneError.innerHTML = 'Write valid phone number';
         return false;
     }
-    emailError.innerHTML = '';
+    phoneError.innerHTML = '';
     return true;
 }
